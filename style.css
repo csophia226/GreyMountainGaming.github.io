@@ -207,3 +207,92 @@ header {
 h2 {
     font-size: 1.5rem;
 }
+
+.gallery-grid-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: .5em;
+    transition: 100ms ease;
+}
+
+.gallery-container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.gallery-container .heading h2{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+}
+
+.gallery-container .heading h2 span{
+    font-weight: 100px;
+}
+
+.gallery-container .gallery-box {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-container .gallery-box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.gallery-container .gallery-box .dream img{ 
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.gallery-container .btn {
+    margin: 40px 0 70px 0;
+    background: #222;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+
+.gallery-container .btn a{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 769px){
+    .gallery-container .gallery-box {
+    flex-direction: column;
+    }
+
+    .gallery-container .gallery-box .dream{
+    width: 100;
+    }
+}
+
+
+@media only screen and (max-width: 643px){
+        .container .heading{
+    width: 100%;
+    }
+
+    .gallery-container .heading h2{
+    font-size: 1em;
+    }
+}
+
